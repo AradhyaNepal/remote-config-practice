@@ -43,10 +43,10 @@ class RemoteConfig {
 }
 
 class TextFieldConfig {
-  final int maxLength;
-  final int minLength;
+  final int? maxLength;
+  final int? minLength;
   final List<TextFieldValidator> validatorRegex;
-  final String formatterRegex;
+  final String? formatterRegex;
   final bool isMandatory;
 
   TextFieldConfig({
