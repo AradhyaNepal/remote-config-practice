@@ -1,4 +1,4 @@
-final value={
+final defaultConfigJSON={
   "name":{
     "maxLength":20,
     "minLength":8,
