@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/cupertino.dart';
 import 'package:remote_config_practice/remote_config_repo.dart';
 
@@ -10,7 +9,8 @@ class RemoteConfigController with ChangeNotifier {
 
   RemoteConfigController() {
     _streamSubscription =
-        RemoteConfigRepo.remoteConfig.onConfigUpdated.listen((event) {
+        RemoteConfigRepo.remoteConfig.onConfigUpdated.listen((event) async{
+          await RemoteConfigRepo.remoteConfig.activate();
           notifyListeners();
         });
   }
