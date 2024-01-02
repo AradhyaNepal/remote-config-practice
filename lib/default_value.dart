@@ -1,62 +1,47 @@
 final defaultConfigJSON={
   "name":{
-    "maxLength":20,
+    "maxLength":50,
     "minLength":8,
-    "validatorRegex":[
-      {
-        "regex":"regex",
-        "message":"message"
-      }
-    ],
-    "formatterRegex":"regex",
+    "validatorRegex":[],
+    "formatterRegex":r'^[a-zA-Z\s]+$',
     "isMandatory":true
   },
   "nickname":{
-    "maxLength":20,
+    "maxLength":50,
     "minLength":8,
-    "validatorRegex":[
-      {
-        "regex":"regex",
-        "message":"message"
-      }
-    ],
-    "formatterRegex":"regex",
+    "validatorRegex":[],
+    "formatterRegex":r'^[a-z0-9_-$@]+$',
     "isMandatory":true
   },
   "email":{
-    "maxLength":20,
-    "minLength":8,
+    "maxLength":null,
+    "minLength":null,
     "validatorRegex":[
       {
-        "regex":"regex",
-        "message":"message"
+        "regex":r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$',
+        "message":"Please enter valid email"
       }
     ],
-    "formatterRegex":"regex",
+    "formatterRegex":null,
     "isMandatory":true
   },
   "phone":{
-    "maxLength":20,
-    "minLength":8,
+    "maxLength":null,
+    "minLength":10,
     "validatorRegex":[
       {
-        "regex":"regex",
-        "message":"message"
+        "regex":r'^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$',
+        "message":"Please enter valid phone"
       }
     ],
-    "formatterRegex":"regex",
+    "formatterRegex":null,
     "isMandatory":true
   },
   "address":{
-    "maxLength":20,
-    "minLength":8,
-    "validatorRegex":[
-      {
-        "regex":"regex",
-        "message":"message"
-      }
-    ],
-    "formatterRegex":"regex",
+    "maxLength":150,
+    "minLength":null,
+    "validatorRegex":[],
+    "formatterRegex":r'^[a-zA-Z0-9, -]+$',
     "isMandatory":false
   },
   "age":{
