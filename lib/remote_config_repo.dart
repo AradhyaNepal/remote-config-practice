@@ -6,6 +6,7 @@ import 'package:remote_config_practice/firebase_options.dart';
 class RemoteConfigRepo {
   static final remoteConfig = FirebaseRemoteConfig.instance;
 
+
   static const String maxAddressLength="maxAddressLength";
   static Future<void> setup() async {
     WidgetsFlutterBinding.ensureInitialized();
@@ -20,9 +21,5 @@ class RemoteConfigRepo {
       maxAddressLength: 45,
     });
     await remoteConfig.fetchAndActivate();
-    remoteConfig.onConfigUpdated.listen((event) async {
-      await remoteConfig.activate();
-      // Use the new config values here.
-    });
   }
 }
