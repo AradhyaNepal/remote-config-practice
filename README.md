@@ -7,10 +7,10 @@
     "validatorRegex":[
       {
         "regex":"message"
-      },
+      }
     ],
     "formatterRegex":"regex",
-    "isMandatory":true,
+    "isMandatory":true
   },
   "nickname":{
     "maxLength":20,
@@ -18,10 +18,10 @@
     "validatorRegex":[
       {
         "regex":"message"
-      },
+      }
     ],
     "formatterRegex":"regex",
-    "isMandatory":true,
+    "isMandatory":true
   },
   "email":{
     "maxLength":20,
@@ -29,10 +29,10 @@
     "validatorRegex":[
       {
         "regex":"message"
-      },
+      }
     ],
     "formatterRegex":"regex",
-    "isMandatory":true,
+    "isMandatory":true
   },
   "phone":{
     "maxLength":20,
@@ -40,10 +40,10 @@
     "validatorRegex":[
       {
         "regex":"message"
-      },
+      }
     ],
     "formatterRegex":"regex",
-    "isMandatory":true,
+    "isMandatory":true
   },
   "address":{
     "maxLength":20,
@@ -51,10 +51,10 @@
     "validatorRegex":[
       {
         "regex":"message"
-      },
+      }
     ],
     "formatterRegex":"regex",
-    "isMandatory":false,
+    "isMandatory":false
   },
   "age":{
     "min":18,
@@ -62,11 +62,11 @@
   },
   "experience":{
     "min":1,
-    "max":10,
+    "max":10
   },
   "heightCm":{
     "min":125,
-    "max":250,
+    "max":250
   }
 }
 ```
