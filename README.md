@@ -6,7 +6,8 @@
     "minLength":8,
     "validatorRegex":[
       {
-        "regex":"message"
+        "regex":"regex",
+        "message":"message"
       }
     ],
     "formatterRegex":"regex",
@@ -17,7 +18,8 @@
     "minLength":8,
     "validatorRegex":[
       {
-        "regex":"message"
+        "regex":"regex",
+        "message":"message"
       }
     ],
     "formatterRegex":"regex",
@@ -28,7 +30,8 @@
     "minLength":8,
     "validatorRegex":[
       {
-        "regex":"message"
+        "regex":"regex",
+        "message":"message"
       }
     ],
     "formatterRegex":"regex",
@@ -39,7 +42,8 @@
     "minLength":8,
     "validatorRegex":[
       {
-        "regex":"message"
+        "regex":"regex",
+        "message":"message"
       }
     ],
     "formatterRegex":"regex",
@@ -50,7 +54,8 @@
     "minLength":8,
     "validatorRegex":[
       {
-        "regex":"message"
+        "regex":"regex",
+        "message":"message"
       }
     ],
     "formatterRegex":"regex",
