@@ -54,5 +54,16 @@ final defaultConfigJSON={
     "formatterRegex":"regex",
     "isMandatory":false,
   },
-
+  "age":{
+    "min":18,
+    "max":100
+  },
+  "experience":{
+    "min":1,
+    "max":10,
+  },
+  "heightCm":{
+    "min":125,
+    "max":250,
+  }
 };
