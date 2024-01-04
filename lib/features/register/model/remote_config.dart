@@ -19,16 +19,19 @@ class RemoteConfig {
     required this.heightCm,
   });
 
-  factory RemoteConfig.fromJson(Map<String, dynamic> json) => RemoteConfig(
-    name: TextFieldConfig.fromJson(json["name"]),
-    nickname: TextFieldConfig.fromJson(json["nickname"]),
-    email: TextFieldConfig.fromJson(json["email"]),
-    phone: TextFieldConfig.fromJson(json["phone"]),
-    address: TextFieldConfig.fromJson(json["address"]),
-    age: SliderConfig.fromJson(json["age"]),
-    experience: SliderConfig.fromJson(json["experience"]),
-    heightCm: SliderConfig.fromJson(json["heightCm"]),
-  );
+  factory RemoteConfig.fromJson(Map<String, dynamic> json) {
+    json=json["data"];
+    return RemoteConfig(
+      name: TextFieldConfig.fromJson(json["name"]),
+      nickname: TextFieldConfig.fromJson(json["nickname"]),
+      email: TextFieldConfig.fromJson(json["email"]),
+      phone: TextFieldConfig.fromJson(json["phone"]),
+      address: TextFieldConfig.fromJson(json["address"]),
+      age: SliderConfig.fromJson(json["age"]),
+      experience: SliderConfig.fromJson(json["experience"]),
+      heightCm: SliderConfig.fromJson(json["heightCm"]),
+    );
+  }
 
   Map<String, dynamic> toJson() => {
     "name": name.toJson(),
