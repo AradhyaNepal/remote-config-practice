@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:developer';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
-import 'package:remote_config_practice/constants/default_config_json.dart';
+import 'package:remote_config_practice/common/constants/default_config_json.dart';
 import 'package:remote_config_practice/features/register/model/remote_config.dart';
 import 'package:remote_config_practice/features/register/repository/remote_config_repo.dart';
 

@@ -1,4 +1,12 @@
 # remote_config_firebase
+
+What you can learn from this project?
+- Amazing Animations.
+- Theme setup for Dark Mode.
+- How to practically implement clean coding in your project.
+- How to implement remote config in our app using Firebase.
+- And lots other exiting things.
+
 ```
 {
   "name":{
@@ -60,3 +68,6 @@
   }
 }
 ```
+
+
+
