@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
-import 'package:remote_config_practice/default_value.dart';
+import 'package:remote_config_practice/constants/default_config_json.dart';
 import 'package:remote_config_practice/firebase_options.dart';
 
 class RemoteConfigRepo {
