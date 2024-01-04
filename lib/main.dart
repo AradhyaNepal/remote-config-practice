@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:remote_config_practice/features/register/register_screen.dart';
 import 'package:remote_config_practice/features/repository/remote_config_repo.dart';
-import 'package:remote_config_practice/remote_config_screen.dart';
 
 void main() async{
   await RemoteConfigRepo.setup();
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const RemoteConfigScreen(),
+      home: const RegisterScreen(),
     );
   }
 }
